@@ -1,0 +1,33 @@
+[1mdiff --cc CommitCafe.java[m
+[1mindex 94fa188,19dc48f..0000000[m
+[1m--- a/CommitCafe.java[m
+[1m+++ b/CommitCafe.java[m
+[36m@@@ -1,17 -1,14 +1,28 @@@[m
+  public class CommitCafe {[m
+  [m
+[32m++<<<<<<< HEAD[m
+[32m +    private static String barista = "Erik"; // STUDENT_TODO_1A: Change name[m
+[32m +    // STUDENT_TODO_1B: Add a nickname or title for the barista[m
+[32m +    private static String nickName = "Big E";[m
+[32m++=======[m
+[32m+     private static String barista = "CoffeeBot"; // STUDENT_TODO_1A: Change name[m
+[32m+     private static String title = "[Lead Barista]";[m
+[32m++>>>>>>> origin/main[m
+  [m
+      private static int cups = 0;[m
+  [m
+      public static void brew(String drink) {[m
+[32m++<<<<<<< HEAD[m
+[32m +        // STUDENT_TODO_2A: Implement - add 1 to cups & print a message[m
+[32m +        // STUDENT_TODO_2B: Add a second brew-related improvement[m
+[32m +        cups += 1;[m
+[32m +        System.out.println("Brewing complete");[m
+[32m +[m
+[32m++=======[m
+[32m+         cups++;[m
+[32m+         System.out.println("CoffeeBot brewed " + drink + ". Never debug before your first cup.");[m
+[32m+         System.out.println("[BOT CHECK] drink length = " + drink.length());[m
+[32m++>>>>>>> origin/main[m
+      }[m
+  [m
+      public static void printSummary() {[m
